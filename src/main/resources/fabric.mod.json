@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modid",
+	"version": "${version}",
+	"name": "ProbniMod",
+	"description": "Moj mod",
+	"authors": [
+		"Cofi"
+	],
+	"contact": {
+		"homepage": "https://github.com/CofiShachou/",
+		"sources": "https://github.com/cofishachou/ProbniMod"
+	},
+	"license": "MIT",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cofi.modid.ProbniMod"
+		],
+		"fabric-datagen": [
+			"net.cofi.modid.ProbniModDataGenerator"
+		],
+		"client": [
+			"net.cofi.modid.ProbniModClient"
+		]
+	},
+	"mixins": [
+		"modid.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
