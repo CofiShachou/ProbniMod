@@ -1,5 +1,8 @@
 package net.cofi.modid;
 
+import net.cofi.modid.block.ModBlocks;
+import net.cofi.modid.item.ModItemGroups;
+import net.cofi.modid.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +15,9 @@ public class ProbniMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.rig();
 
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
